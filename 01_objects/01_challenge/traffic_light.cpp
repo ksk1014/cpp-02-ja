@@ -10,7 +10,7 @@ std::string get_action(TrafficLight light) {
     if(light == TrafficLight::red){
         msg = "Stop";
     }else if(light == TrafficLight::yellow){
-        msg = "Attention";
+        msg = "Caution";
     }else if(light == TrafficLight::green){
         msg = "Go";
     };
