@@ -2,7 +2,7 @@
 
 class Car {
 public:
-    Car(std::string make, std::string model, int year, double price);
+    // Car(std::string make, std::string model, int year, double price);
 
     void setPrice(double price);
 
