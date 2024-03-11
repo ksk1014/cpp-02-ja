@@ -8,7 +8,7 @@ public:
     void setPrice(double price);
 
     void setDriver(Driver* driver);
-    Driver getDriver();
+    Driver* getDriver();
 
     std::string getMake() const;
     std::string getModel() const;

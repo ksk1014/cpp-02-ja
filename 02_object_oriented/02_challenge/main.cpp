@@ -14,5 +14,7 @@ int main() {
     std::cout << car1.getPrice() << "\n";
 
     car1.setDriver(&keisuke);
-    std::cout << car1.getDriver().getName() << "\n";
+    Driver car1_obj = *car1.getDriver();
+    std::cout << car1_obj.getName() << "\n";
+    std::cout << car1.getDriver()->getName() << "\n";
 }
