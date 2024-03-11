@@ -2,8 +2,8 @@
 
 #include <iostream>
 
-Car::Car(std::string make, std::string model, int year, double price, Driver driver)
-    : make(make), model(model), year(year), price(price), driver(driver) {
+Car::Car(std::string make, std::string model, int year, double price)
+    : make(make), model(model), year(year), price(price) {
     if (price < 0) {
         std::cerr << "Negative Car Price!" << "\n";
     }
@@ -14,11 +14,11 @@ void Car::setPrice(double price) {
     this->price = price;
 }
 
-void Car::setDriver(Driver driver){
+void Car::setDriver(Driver* driver){
     this->driver = driver;
 }
 Driver Car::getDriver(){
-    return driver;
+    return *driver;
 }
 
 std::string Car::getMake() const { return make; }
